@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./templateFirst.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:c="http://java.sun.com/jsp/jstl/core"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="title">
+       обчислення
+    </ui:define>
+
+    <ui:define name="right">
+
+    </ui:define>
+
+    <ui:define name="content">  
+
+      <h:form>
+        
+  Введіть моменти часу t  та верхню/нижню межу похибки для X= At + B
+        <h:panelGrid id="grid" columns="2" cellpadding="7">
+            <h:outputLabel for="spinnerBasic" value="t1: " />
+            <p:spinner id="spinnerBasic"
+                    value="#{spinnerController.number1}" stepFactor="0.25" min="-100" max="100"/>
+             
+            <h:outputLabel for="spinnerStep" value="t2: " />
+            <p:spinner id="spinnerStep"
+                    value="#{spinnerController.number2}" stepFactor="0.25" min="-100" max="100"/>
+             
+            <h:outputLabel for="minmax" value="t3: " />
+            <p:spinner id="x3"
+                    value="#{spinnerController.number3}" stepFactor="0.25" min="-100" max="100"/>
+            
+            <h:outputLabel for="X4" value="t4: " />
+            <p:spinner id="x4"
+                    value="#{spinnerController.number4}" stepFactor="0.25" min="-100" max="100"/> 
+            
+            <h:outputLabel for="minmax" value="t5: " />
+            <p:spinner id="x5"
+                    value="#{spinnerController.number5}" stepFactor="0.25" min="-100" max="100"/>
+            
+            <h:outputLabel for="X6" value="t6: " />
+            <p:spinner id="x6"
+                    value="#{spinnerController.number6}" stepFactor="0.25" min="-100" max="100"/> 
+            
+            <h:outputLabel value="" />
+             <h:outputLabel value=" " />
+ 
+            <h:outputLabel for="ajaxspinner" value="Похибка: " />
+            <p:outputPanel>
+                <p:spinner id="ajaxspinner" value="#{spinnerController.number7}" stepFactor="0.01" min="-1" max="1">
+                    <p:ajax update="ajaxspinnervalue" process="@this" />
+                </p:spinner>
+                <h:outputText id="ajaxspinnervalue"
+                        value="#{spinnerController.number8}"/>
+            </p:outputPanel>
+ 
+     
+        </h:panelGrid>
+
+                 
+    <p:commandButton value="Виконати" update="display" oncomplete="PF('dlg').show()" />
+    <p:commandButton value="Попереднє значення" type="reset" />
+     
+    <p:dialog header="Values" widgetVar="dlg" showEffect="fold" hideEffect="fold" modal="true" dynamic="true" >
+        <h:panelGrid id="display" columns="2" cellpadding="9">
+            
+            <h:outputText value="Введені дані"/>
+            <h:outputText value="#{spinnerController.input}" /> 
+            
+            <h:outputText value="Результат: "/>
+            <h:outputText value="#{spinnerController.output}" /> 
+            
+        </h:panelGrid>
+     </p:dialog>
+                 
+</h:form>
+    </ui:define>
+
+</ui:composition>

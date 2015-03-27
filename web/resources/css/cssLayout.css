@@ -1,0 +1,119 @@
+
+#top {
+    background: url("img/bg_header.jpg") repeat-x scroll 0px 0px rgb(255, 255, 255);
+    padding: 100px;
+    margin: 0px;
+    display: block;
+    font-size: 600%;
+    font-weight: normal;
+}
+
+#bottom {
+    background: url("img/bg_footer.jpg") repeat scroll left bottom transparent;
+    overflow: hidden;
+    color: rgb(51, 51, 51);
+    display: block;
+    padding: 2em 0em 6em;
+    width: 100%;
+}
+
+#left {
+    float: left;
+    width: 240px;
+}
+#right {
+    background: none repeat scroll 0% 0% rgb(153, 153, 153);
+    padding: 0em;
+    color: rgb(153, 153, 153);
+    top: 0em;
+}
+#right, #contact-button {
+    width: 23em;
+    position: absolute;
+    right: 0px;
+}
+
+.center_content {
+    position: relative;
+    background-color: #dddddd;
+    padding: 5px;
+    font-family: Verdana;
+}
+
+.left_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.right_content {
+    background-color: #dddddd;
+    padding: 2em;
+    margin: 0px 0px 0px 240px;
+    min-height: 350px;
+}
+
+#top a:link, #top a:visited {
+    color: white;
+    font-weight : bold;
+    text-decoration: none;
+}
+
+#top a:link:hover, #top a:visited:hover  {
+    color: black;
+    font-weight : bold;
+    text-decoration : underline;
+}
+span.dark
+{
+    color: #999;
+    border-bottom:  1px solid black;
+}
+span.dark2
+{
+    color: #666;
+}
+
+div.top-border {
+    border-bottom: 3px solid rgb(128, 185, 146);
+}
+div.top-border {
+    background: url("img/bg_minibar_top.jpg") repeat-x scroll left top transparent;
+}
+div.border {
+    height: 1em;
+}
+
+#right .subnav {
+    padding: 2em;
+}
+.subnav, .black {
+    padding: 2em;
+}
+.white {
+    padding-top: 1em;
+}
+.white, .grey, .black {
+    padding: 2em;
+}
+.grey {
+}
+input.space{
+    margin:30px 15px 15px;
+}
+input.spaceReg{
+    background: rgb(255, 255, 255);
+    margin:3px 15px 15px 695px;
+}
+select.space{
+    margin:30px 15px 15px;
+}
+.panelGridCenter td,.panelGridCenter tr {
+    text-align: center;
+}
+
+
+.linkHaircut td,.linkHaircuttr {
+    text-align: center;
+    margin:300px 15px 15px;
+}

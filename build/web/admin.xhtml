@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./templateFirst.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:c="http://java.sun.com/jsp/jstl/core"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="title">
+        Про нас
+    </ui:define>
+
+    <ui:define name="right">
+
+    </ui:define>
+
+    <ui:define name="content">  
+
+    <h4>Наша команда представлена провідними співробітниками - Поліщук Альона та Педько Рома.
+     Розробники є студентами групи ІС-11</h4>
+    <p:accordionPanel multiple="true">
+        <p:tab title="Поліщук Альона">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="css/img/AlyonaFoto.JPG" />
+                <h:outputText
+                    value="  Back-end розробник
+     Володіння наступними технологіями
+     - Java SE, EE
+     - EJB, Spring
+     - JSF, PrimeFaces, JSTL
+     - Oracle DB, MySQL, Pocgrest
+     - Hibernate, Hadoop, Hive
+     Володіє англійською мовою" />
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Педько Рома">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:graphicImage name="css/img/Roma_Foto.JPG" />
+                <h:outputText value="Front-end розробник
+     Володіння наступними технологіями
+     - JavaScript, JQuery, AJAX, Angular JS
+     - CSS, HTML5
+     - MS SQL, MySQL
+     - PHP, C++
+     Володіє англійською мовою" />
+            </h:panelGrid>
+        </p:tab>
+   
+    </p:accordionPanel>
+    
+   
+     
+     
+    
+     
+     Контакти - Поліщук Олена +380501511622, alyona2308@ukr.net
+              - Педьо Рома +380939379992, romanPedko@gmail.com
+              
+     Також нас ви можете знайти у соц мережах
+ 
+
+    </ui:define>
+
+</ui:composition>

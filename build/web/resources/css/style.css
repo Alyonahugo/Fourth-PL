@@ -1,0 +1,41 @@
+
+.uravnenie{
+	margin-bottom:50px;
+}
+.virazhenie{
+	padding-bottom:10px;
+}
+.virazhenie a{
+	padding: 0px 5px;
+	margin: 10px;
+	background: #042f77;
+	color: #ffffff;
+	border-radius:10px;
+	font-weight: bold;
+	box-shadow:  0 0 5px rgba(0,0,0,0.5);
+}
+.virazhenie input{
+	width:30px;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom:1px solid #939393;
+	font-style:italic;
+	text-align:center;
+	margin: 0px 10px;
+	background:#f0f0f0;
+}
+.virazhenie select{
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom:1px solid #939393;
+	width:50px;	
+	background:#f0f0f0;
+}
+.ogranichenie_add{
+	float:right;
+}
+.ogranichenie{
+	display:none;
+}
