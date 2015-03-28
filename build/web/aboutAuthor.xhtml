@@ -26,6 +26,15 @@
             <h:outputText id="display" />
         </h:form>
 
+        <h:panelGrid columns="2" cellpadding="5">
+
+            <h:outputText value="Ваша оцінка:" />
+            <p:rating value="#{ratingView.rating3}">
+                <p:ajax event="rate" listener="#{ratingView.onrate}" update="messages" />
+                <p:ajax event="cancel" listener="#{ratingView.oncancel}" update="messages" />
+            </p:rating>            
+        </h:panelGrid>
+
         <p:commandButton value="Відправити" update="display" oncomplete="PF('dlg').show()" style="margin:5px" />
 
         <p:dialog header="Повідомлення збережено" widgetVar="dlg" showEffect="fade" hideEffect="fade">
