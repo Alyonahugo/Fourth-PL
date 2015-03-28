@@ -18,9 +18,24 @@
 
     <ui:define name="content">  
 
-      Робота написана студенткою 3-го курсу групи ІС-11 Поліщук Альоною.
-      
-      У роботі використанно сервера JBoss, JSF MVC, Java2EE, CSS, XML.
+        <p:growl id="messages" showDetail="true" />
+
+        <h:form>               
+            <h3>Ваше повідомлення</h3>
+            <p:inputTextarea rows="8" cols="45" counter="display" maxlength="300" counterTemplate="{0}" autoResize="false" />
+            <h:outputText id="display" />
+        </h:form>
+
+        <p:commandButton value="Відправити" update="display" oncomplete="PF('dlg').show()" style="margin:5px" />
+
+        <p:dialog header="Повідомлення збережено" widgetVar="dlg" showEffect="fade" hideEffect="fade">
+            <h:panelGrid id="display" columns="2" cellpadding="5">
+
+                <h:outputText value="Дякуємо за відгук" />
+
+            </h:panelGrid>
+        </p:dialog>
+
     </ui:define>
 
 </ui:composition>
