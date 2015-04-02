@@ -25,7 +25,7 @@
 
         <h:form>               
             <h3>Ваше повідомлення</h3>
-            <p:inputTextarea rows="8" cols="45" counter="display" maxlength="300" counterTemplate="{0}" autoResize="false" />
+            <p:inputTextarea class="form-control" rows="8" cols="45" counter="display" maxlength="300" counterTemplate="{0}" autoResize="false" />
             <h:outputText id="display" />
         </h:form>
 
@@ -38,7 +38,7 @@
             </p:rating>            
         </h:panelGrid>
 
-        <p:commandButton value="Відправити" update="display" oncomplete="PF('dlg').show()" style="margin:5px" />
+        <p:commandButton class="btn btn-success" value="Відправити" update="display" oncomplete="PF('dlg').show()" style="margin:5px" />
 
         <p:dialog header="Повідомлення збережено" widgetVar="dlg" showEffect="fade" hideEffect="fade">
             <h:panelGrid id="display" columns="2" cellpadding="5">
