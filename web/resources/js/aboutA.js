@@ -3,5 +3,10 @@
 //         $('#content').style('text-align', 'center');
 //         $('table').style('margin-left', '40%');
 //     } );
-if (window.location.pathname == '/Fourth-PL/faces/templateFirst.xhtml')
-console.log('checking');
+console.log('checking1');
+if (window.location.pathname == '/Fourth-PL/faces/templateFirst.xhtml') {
+	console.log('checking2');
+} else {
+	console.log('checking3');
+}
+
