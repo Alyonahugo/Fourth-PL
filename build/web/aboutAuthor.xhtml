@@ -37,7 +37,7 @@
             </p:rating>            
         </h:panelGrid>
 
-        <p:commandButton value="Відправити" update="display" oncomplete="PF('dlg').show()" style="margin:5px" />
+        <p:commandButton styleClass="btn btn-success" value="Відправити" update="display" oncomplete="PF('dlg').show()" style="margin:5px" />
 
         <p:dialog header="Повідомлення збережено" widgetVar="dlg" showEffect="fade" hideEffect="fade">
             <h:panelGrid id="display" columns="2" cellpadding="5">
