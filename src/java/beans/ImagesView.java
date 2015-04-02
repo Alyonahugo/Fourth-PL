@@ -26,7 +26,7 @@ public class ImagesView {
         images.add("Rainbow");
         images.add("Альфа банк");
         images.add("Газпромбанк");  
-        images.add("Райффайзенбанк");
+        images.add("Приват банк");
     }
 
     public List<String> getImages() {
