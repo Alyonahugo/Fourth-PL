@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<<<<<<< HEAD
-=======
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
->>>>>>> origin/master
+
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 template="./templateFirst.xhtml"
@@ -28,11 +27,9 @@
 
         <h:form>               
             <h3>Ваше повідомлення</h3>
-<<<<<<< HEAD
-            <p:inputTextarea rows="8" cols="45" counter="display" maxlength="300" counterTemplate="{0}" autoResize="false" />
-=======
+
             <p:inputTextarea class="form-control" rows="8" cols="45" counter="display" maxlength="300" counterTemplate="{0}" autoResize="false" />
->>>>>>> origin/master
+
             <h:outputText id="display" />
         </h:form>
 
@@ -45,11 +42,9 @@
             </p:rating>            
         </h:panelGrid>
 
-<<<<<<< HEAD
-        <p:commandButton value="Відправити" update="display" oncomplete="PF('dlg').show()" style="margin:5px" />
-=======
+
+
         <p:commandButton class="btn btn-success" value="Відправити" update="display" oncomplete="PF('dlg').show()" style="margin:5px" />
->>>>>>> origin/master
 
         <p:dialog header="Повідомлення збережено" widgetVar="dlg" showEffect="fade" hideEffect="fade">
             <h:panelGrid id="display" columns="2" cellpadding="5">
